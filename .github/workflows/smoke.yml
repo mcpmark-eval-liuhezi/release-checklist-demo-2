@@ -1,0 +1,11 @@
+name: smoke
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print smoke check line
+        run: echo "checklist-smoke-ok"
